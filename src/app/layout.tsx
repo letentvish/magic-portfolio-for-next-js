@@ -70,7 +70,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
       </head>
       <ThemeProvider>
         <ToastProvider>
-          <Column style={{ minHeight: "100vh" }} as="body" fillWidth margin="0" padding="0">
+          <Column suppressHydrationWarning style={{ minHeight: "100vh" }} as="body" fillWidth margin="0" padding="0">
             <Background
               position="fixed"
               mask={{
