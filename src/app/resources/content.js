@@ -1,25 +1,25 @@
 import { Logo } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Vishal",
+  lastName: "Singh",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "AI Product Builder & Systems Architect",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "vvishal5297@gmail.com",
+  location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Hindi"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  title: <>Subscribe to {person.firstName}'s Dispatches</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      Deep dives on local-first AI architectures, RAG 2.0 pipelines, multi-agent systems,
+      and cognitive UX design.
     </>
   ),
 };
@@ -30,17 +30,17 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/letentvish",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/visualux",
   },
   {
-    name: "X",
-    icon: "x",
-    link: "",
+    name: "WhatsApp",
+    icon: "whatsapp",
+    link: "https://wa.me/919511444357",
   },
   {
     name: "Email",
@@ -53,18 +53,18 @@ const home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  title: `${person.name} – ${person.role}`,
+  description: `Portfolio and systems architecture work by ${person.name}, ${person.role}`,
+  headline: <>Architecting Sovereign AI & Agentic Systems</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    title: <>Flagship Project: <strong className="ml-4">AstroDash</strong></>,
+    href: "/work/astrodash",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Vishal, an AI systems architect and product builder. I invert the traditional SaaS model with
+      local-first, privacy-respecting intelligence platforms—bridging RAG 2.0 pipelines, multi-agent architectures, and intuitive human UX.
     </>
   ),
 };
@@ -82,17 +82,19 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
     display: true,
-    title: "Introduction",
+    title: "The Sovereign AI Philosophy",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        You are the platform. The traditional cloud SaaS model forces users to rent their digital brains
+        and host intimate data on distant servers. I build local-first AI architectures where intelligence
+        lives on your hardware, data never leaves your device, and you own the model, the memory, and the insights.
+        With expertise spanning multi-agent orchestration, RAG 2.0 pipelines, and glassmorphic UI systems,
+        I engineer AI-native experiences that are both technically rigorous and genuinely human-usable.
       </>
     ),
   },
@@ -101,41 +103,54 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Independent AI Systems Architect",
+        timeframe: "2023 - Present",
+        role: "AI Product Builder & Architect",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Architected and shipped AstroDash, an AI-native life navigation platform combining 8-stage hybrid retrieval, Swiss Ephemeris mathematical calculation, and Model Context Protocol (MCP) integrations.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Engineered a 5-stage defense-in-depth JSON self-healing pipeline for zero runtime crashes during LLM inference, toggling seamlessly between cloud (Gemini) and local (Ollama) engines.
+          </>,
+          <>
+            Designed and built ShaktiVibe (holistic wellness intelligence with Ayurvedic RAG) and WatchMatch (agentic natural-language movie discovery platform with multidimensional vibe filters).
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            alt: "AstroDash AI Platform",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Fensso & MultipliersKraft",
+        timeframe: "2022 - 2024",
+        role: "Senior UX & Product Designer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Led end-to-end UX/UI architecture for enterprise learning management (LXP) and ERP systems, unifying brand identity and components across web and mobile.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Reduced design-to-development handoff time by ~30% using Figma Dev Mode, custom design systems, and tokenized component libraries.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Freelance UX Specialist",
+        timeframe: "2020 - 2022",
+        role: "UI/UX & Frontend Specialist",
+        achievements: [
+          <>
+            Designed and delivered high-converting digital products, responsive web apps, and interactive prototypes for SaaS and e-commerce clients.
+          </>,
+          <>
+            Conducted user journey mapping, design audits, and iterative usability testing to improve conversion and task completion rates.
           </>,
         ],
         images: [],
@@ -144,49 +159,56 @@ const about = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Architecture & Research",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "The 6-Layer Intelligence Stack",
+        description: <>Pioneered architecture pattern spanning FastAPI entry points, hybrid router (Gemini/Ollama), prompt schemas, RAG 2.0 (FAISS + BM25 + Cross-Encoder), session memory, and cross-view narrative consistency.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Cognitive Psychometrics & Vedic Epistemology",
+        description: <>Synthesized classical knowledge frameworks, astronomical mathematics, and modern machine learning into coherent diagnostic systems.</>,
       },
     ],
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Technical Skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "AI Systems & RAG 2.0",
+        description: <>RAG 2.0 pipelines, Multi-Agent Systems, FAISS vector search, BM25 hybrid retrieval, Cross-Encoder re-ranking, Ollama local inference, Gemini API, Model Context Protocol (MCP).</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
             src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
+            alt: "AI Architecture",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        title: "Full-Stack Development",
+        description: <>Next.js 14, React, TypeScript, FastAPI (Python), uvicorn, Docker, SQLite, PostgreSQL, REST APIs, JSON pipelines.</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/projects/project-01/cover-03.jpg",
+            alt: "Full-Stack Development",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Product Design & Agent UX",
+        description: <>Agent control interfaces, conversational UI, Figma design systems, glassmorphism UI, Framer Motion, psychometric assessment UX.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
             src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
+            alt: "Product Design",
             width: 16,
             height: 9,
           },

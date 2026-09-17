@@ -1,0 +1,55 @@
+---
+title: "AstroDash: AI-Native Vedic Life Navigation"
+publishedAt: "2026-04-15"
+summary: "An AI-native life navigation platform combining 8-stage hybrid retrieval with precise Swiss Ephemeris astronomical math, RAG 2.0, and local-first architecture."
+images:
+  - "/images/projects/project-01/cover-01.jpg"
+  - "/images/projects/project-01/cover-02.jpg"
+  - "/images/projects/project-01/cover-03.jpg"
+  - "/images/projects/project-01/cover-04.jpg"
+team:
+  - name: "Vishal Singh"
+    role: "AI Systems Architect & UX Designer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/visualux"
+---
+
+## Overview
+
+Most astrology applications today are simple lookup tables—static horoscopes written for millions that completely ignore natal positions, real-time planetary transits, and personal life context.
+
+**AstroDash** was built as a living, thinking life navigation system. It bridges classical Vedic epistemological traditions with modern machine intelligence, providing personalized, contextual daily briefings, timing recommendations, and conversational reasoning.
+
+---
+
+## System Architecture: The 3 Pillars
+
+AstroDash is architected across three core decoupled layers:
+
+### 1. The Astronomical Calculator (Backend)
+- Powered by `pyswisseph` (C-based Swiss Ephemeris wrapper), providing NASA-grade precision for planetary longitudes, house cusps (Bhava Chalit), and divisional charts (D-9 Navamsha).
+- Deterministic calculation layer that feeds verified celestial mathematics into the reasoning engine without hallucination risks.
+
+### 2. The Cognitive AI Engine (RAG 2.0)
+- **Hybrid Retrieval:** Integrates FAISS dense vector search with BM25 sparse keyword search, followed by Cross-Encoder re-ranking to extract the top-500 highest signal tokens from local classical texts (*Brihat Parashara Hora Shastra*, *Jaimini Upadesha Sutras*).
+- **Model Agnosticism:** Seamlessly toggle between local offline inference via Ollama (Llama 3 / Mistral) and cloud-based models via Google AI Studio (Gemini 1.5 Pro / Flash).
+- **Defense-in-Depth JSON Pipeline:** Multi-stage self-healing schema validator ensuring 100% structured JSON outputs for all UI widgets without runtime parsing errors.
+
+### 3. State & Narrative Continuity (Memory)
+- PostgreSQL and SQLite edge storage maintain persistent session context. Today's cosmic weather briefing carries forward into the weekly planner and chat interface, eliminating conversational amnesia and self-contradictions.
+
+---
+
+## Key Features & UX Innovations
+
+- **The Command Center:** A dark-mode, glassmorphic HUD designed around high visual hierarchy, displaying daily cosmic themes, hourly peak energy wave graphs, and strategic windows for action or reflection.
+- **Model Context Protocol (MCP) Integration:** Exposes AstroDash's local astronomical and diagnostic tools directly to external AI assistants and IDEs via standardized MCP endpoints.
+- **Privacy-First & Local-First:** Designed with the Sovereign AI philosophy—user birth data and personal reflections never need to leave the client device when run in local Ollama mode.
+
+---
+
+## Tech Stack
+
+- **Frontend:** Next.js 14 (App Router), React, TypeScript, Framer Motion, Tailwind CSS, Glassmorphic UI Design System.
+- **Backend:** Python, FastAPI, uvicorn, `pyswisseph`, SQLite, PostgreSQL.
+- **AI & Retrieval:** RAG 2.0 (FAISS, BM25, Cross-Encoder), Ollama, Google AI Studio (Gemini API), Model Context Protocol (MCP).
